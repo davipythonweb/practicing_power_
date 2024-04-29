@@ -1,3 +1,5 @@
 # practicing_power_
-studying a little
+
+- studying a little
+
 #### origamid_frontend
