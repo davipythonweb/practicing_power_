@@ -45,3 +45,48 @@ var professor,
 
 
  console.log(meuNome,minhaIdade,comidaFavorita, professor)
+
+
+
+//  exercicio
+// declare uma variavel contendo uma string
+var nomeDaPessoa = 'Pedro'
+
+
+// declare uma varivael contendo um numero dentro de uma string
+var idade = '30'
+// declare uma variavel com a sua idade
+var altura = 1.78
+// declare duas variaveis, uma com seu nome
+// e outra com seu sobrenome e some as mesmas
+var sobrenomeDaPessoa = 'Petrolio'
+
+var nomeDaPessoaCompleto = `${nomeDaPessoa}  ${sobrenomeDaPessoa}` // usando template string
+
+// coloque a seguinte frase em uma variavel: It's time
+
+var frase = `It's time`  //ou 'Its\'s time'
+
+var frase2 = 'It\'s time' //passando o scape
+
+var frase3 = "It's time" //ou passando aspas duplas para resolver logo
+
+// verifique o tipo da variavel que contem o seu nome
+var verificarTipoNome = typeof nomeDaPessoa
+
+
+
+
+
+console.info(typeof  altura)
+console.info(typeof animal, idade)
+
+console.info(nomeDaPessoaCompleto)
+
+
+console.info(frase)
+console.info(frase2)
+console.info(frase3)
+
+
+console.info(verificarTipoNome)
