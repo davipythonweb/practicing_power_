@@ -4,6 +4,18 @@ var sobrenome = "Rafael",
 console.info(sobrenome,cidade)
 
 
+/* 7 tipos de dados */
+
+// var nome = 'Diego' =>string
+// var idade = 28 => number
+// var possuiFaculdade = true =>Boolean
+// var time => undesined
+// var comida = null => null
+// var simbolo = Symbol() Symbol
+// var novoOjeto = {} Object
+
+
+
 var semDefinir
 
 console.info(semDefinir)
