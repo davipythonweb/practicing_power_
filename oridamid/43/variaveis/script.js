@@ -16,4 +16,6 @@ var subtracaoString = '100' - 50 // 50
 var multiplicacaoString = '100' * '2' //200
 var divisaoString = 'Comprei 10' / 2 // NaN (not a number)
 
-nome.isNaN()
+
+//metodo para saber se eh nulo
+nome.isNaN() 
