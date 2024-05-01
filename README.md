@@ -3,7 +3,10 @@
 -prettier esta *desabilitado* in Codespaces
 
 *server no render.com*
-- https://laboratorio-1-6w67.onrender.com/
+`https://laboratorio-1-6w67.onrender.com/`
+- conferis a pagina de status do server
+`https://status.render.com/`
+
 - studying a little
   _pluguins_
 - Prettier
