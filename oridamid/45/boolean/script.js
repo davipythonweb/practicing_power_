@@ -78,6 +78,7 @@ if(!!'') // false
 // voce pode utilizar o  ==> !!
 // para verificar se uma expressao eh Truthy ou Falsy
 
+
 // Operadores de Comparacao
 // vao sempre retornar um valor booleano
 

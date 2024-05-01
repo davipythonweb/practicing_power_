@@ -74,7 +74,7 @@ switch (corFavorita) {
 }
 
 
-// exercicio
+// exercicio' \(°~°)/
 
 // verifique se a sua idade é maior do que a de algum parente
 // Dependendo do resultado coloque 'É maior' ou 'É igual' ou 'É menor.
@@ -91,7 +91,7 @@ if (minhaIdade > idadeDoParente) {
 
 // Qual valor é retornado na seguinte expressao?
 var expressao = (5 - 2) && (5 - " ") && (5 - 2);
-console.log(expressao) // 3, que eh o rpimeiro valor verdadeiro
+console.log(expressao) // 3, que eh o primeiro valor verdadeiro
 
 
 // verifique se as seguintes variaveis sao Trusty ou Falsy
@@ -101,19 +101,27 @@ var possuiDoutorado = false;
 var empregoFuturo;
 var dinheiroNaConta = 0;
 
+console.info(!!nome,!!idade,!!possuiDoutorado,!!empregoFuturo,!!dinheiroNaConta)
+
 // Compara o total de habitantes do Brasil com a China(valor em milhoes)
 var Brasil = 207;
 var China = 1340;
 
+if(Brasil > China) {
+  console.info('Brasil tem mais habitantes.')
+} else {
+  console.log('Brasil tem menos habitantes.')
+}
+
 // O que ira aparecer no console?
-if ("Gato" === "gato" && 5 > 2) {
+if ("Gato" === "gato" && (5 > 2)) {
   console.info("Verdadeiro");
 } else {
   console.info("Falso");
 }
 
 // O que ira aparecer no console?
-if ("Gato" === "gato" || 5 > 2) {
+if ("Gato" === "gato" || (5 > 2)) {
   console.info("Gato" && "Cão");
 } else {
   console.info("Falso");
