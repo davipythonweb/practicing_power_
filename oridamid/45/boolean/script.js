@@ -53,7 +53,7 @@ if('')  // ou "" ou ``
 if(true)
 if(1)
 if(' ')
-if('andre)
+if('andre')
 if(-5)
 if({})
 */

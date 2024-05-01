@@ -29,10 +29,10 @@ if (condicional) {
   console.log("False");
 }
 
-// Operadr Logico ou
+// Operadores Logico || ou
 // Compara se uma expressao ou outra eh verdadeira
 // OBS: Retorna o primeiro valor
-// true que encontrar
+// (true) que encontrar
 
 /*
 true || true // true
@@ -57,10 +57,64 @@ console.log(condicional2, condicional3);
 // cancelar a continuacao. O valor de dafault ocorrera
 // caso nenhuma das anteriores seja verdadeira.
 
-function teste() {
-  console.info("teste");
+var corFavorita = "Amarelo";
+
+switch (corFavorita) {
+  case "Azul":
+    console.info("Olhe para o céu.");
+    break;
+  case "Vemelho":
+    console.info("Olhe para as rosas.");
+    break;
+  case "Amarelo":
+    console.log("Olhe para o sol.");
+    break;
+  default:
+    console.info("Feche os olhos.");
 }
 
-function teste2() {
-  console.log("identacao errada");
+
+// exercicio
+
+// verifique se a sua idade é maior do que a de algum parente
+// Dependendo do resultado coloque 'É maior' ou 'É igual' ou 'É menor.
+var minhaIdade = 29;
+var idadeDoParente = 50;
+
+if (minhaIdade > idadeDoParente) {
+  console.log("É maior");
+} else if (minhaIdade === idadeDoParente) {
+  console.log("É igual.");
+} else {
+  console.log("Idade é menor!");
+}
+
+// Qual valor é retornado na seguinte expressao?
+var expressao = (5 - 2) && (5 - " ") && (5 - 2);
+console.log(expressao) // 3, que eh o rpimeiro valor verdadeiro
+
+
+// verifique se as seguintes variaveis sao Trusty ou Falsy
+var nome = "Andre";
+var idade = 29;
+var possuiDoutorado = false;
+var empregoFuturo;
+var dinheiroNaConta = 0;
+
+// Compara o total de habitantes do Brasil com a China(valor em milhoes)
+var Brasil = 207;
+var China = 1340;
+
+// O que ira aparecer no console?
+if ("Gato" === "gato" && 5 > 2) {
+  console.info("Verdadeiro");
+} else {
+  console.info("Falso");
+}
+
+// O que ira aparecer no console?
+if ("Gato" === "gato" || 5 > 2) {
+  console.info("Gato" && "Cão");
+} else {
+  console.info("Falso");
 }

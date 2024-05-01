@@ -1,5 +1,8 @@
 # practicing*power*
 
+-prettier esta *desabilitado* 
+
+
 - studying a little
   _pluguins_
 - Prettier
