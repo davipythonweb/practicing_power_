@@ -1,6 +1,6 @@
 # practicing*power*
 
--prettier esta *desabilitado* 
+-prettier esta *desabilitado* in Codespaces
 
 
 - studying a little
