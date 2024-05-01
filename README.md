@@ -2,7 +2,8 @@
 
 -prettier esta *desabilitado* in Codespaces
 
-
+*server no render.com*
+- https://laboratorio-1-6w67.onrender.com/
 - studying a little
   _pluguins_
 - Prettier
