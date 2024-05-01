@@ -14,5 +14,6 @@
 - para verificar as alteraçoes nos arquivos => git diff
 - verificar o satatus => git status
 - levar para a stage tudo que foi modificado na pasta de trabalho => git add -A
+- para rever as modificações => git log
 
 #### origamid_frontend
