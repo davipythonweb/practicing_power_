@@ -58,3 +58,7 @@ console.log(condicional2, condicional3)
 // e utilizar a palavra chave (break) para
 // cancelar a continuacao. O valor de dafault ocorrera
 // caso nenhuma das anteriores seja verdadeira.
+
+function teste() {
+  console.info('teste')
+}
