@@ -1,6 +1,10 @@
 # practicing*power*
 
 - studying a little
+  _pluguins_
+- Prettier
+- EditorConfig
+- Live Server
 
 - ler arquivos com prettier => npm run lint:check
 - escrever nos arquivos com prettier => npm run lint:fix
