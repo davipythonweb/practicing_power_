@@ -3,7 +3,7 @@
 
 // OBS: Se ambos os valores dorem true ele ira retornar o
 // ultimo valor verificado Se algum valor
-// for false ele ira retornar o mesmo e nao ira 
+// for false ele ira retornar o mesmo e nao ira
 // continuar a verificar os proximos
 
 /*
@@ -16,18 +16,17 @@ false && true // false
 (5 >= 5) && (3 < 6) // true
 */
 
-
-if((5 - 5) && (5 + 5)) {
-  console.log('Verdadeiro')
+if (5 - 5 && 5 + 5) {
+  console.log("Verdadeiro");
 } else {
-  console.log('False')
+  console.log("False");
 }
 
-var condicional = (5 - 10) && (5 + 5)
-if(condicional) {
-  console.log('Verdadeiro', condicional)
+var condicional = 5 - 10 && 5 + 5;
+if (condicional) {
+  console.log("Verdadeiro", condicional);
 } else {
-  console.log('False')
+  console.log("False");
 }
 
 // Operadr Logico ou
@@ -35,6 +34,7 @@ if(condicional) {
 // OBS: Retorna o primeiro valor
 // true que encontrar
 
+/*
 true || true // true
 true || false // true
 false || true // true
@@ -42,14 +42,12 @@ false || true // true
 (5 - 5) || ( 5 + 5) // 10
 'Gato' || false // Gato
 ( 5 >= 5) || (3 < 6) // true
+*/
 
+var condicional2 = 5 - 5 || 5 + 5 || 10 - 2; // retornou o primeiro verdadeiro
+var condicional3 = 5 - 5 || (5 + 5 && 10 - 2); //retornou o ultimo verdadeiro
 
-var condicional2 = (5 - 5) || (5 + 5) || (10 - 2) // retornou o primeiro verdadeiro
-var condicional3 = (5 - 5) || (5 + 5) && (10 - 2) //retornou o ultimo verdadeiro
-
-console.log(condicional2, condicional3)
-
-
+console.log(condicional2, condicional3);
 
 // Switch
 // Com o switch voce pode verificar de uma variavel
@@ -60,5 +58,9 @@ console.log(condicional2, condicional3)
 // caso nenhuma das anteriores seja verdadeira.
 
 function teste() {
-  console.info('teste')
+  console.info("teste");
+}
+
+function teste2() {
+  console.log("identacao errada");
 }

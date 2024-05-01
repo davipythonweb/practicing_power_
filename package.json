@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "lint:check": "prettier --check ."
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write ."
   },
   "devDependencies": {
     "prettier": "^3.2.5"

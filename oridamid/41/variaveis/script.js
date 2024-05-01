@@ -1,19 +1,14 @@
-
 // variaveis
-var pessoa = "Atonio"
-let idade = 29
-var possui_faculdade = true
+var pessoa = "Atonio";
+let idade = 29;
+var possui_faculdade = true;
 
+var nome = "Andre";
 
-var nome = "Andre"
+console.info(nome);
 
-console.info(nome)
+var preco = 25;
+var totalComprado = 5;
+var totalPreco = totalComprado * preco;
 
-
-var preco = 25
-var totalComprado = 5
-var totalPreco = totalComprado * preco
-
-console.info(totalPreco)
-
-
+console.info(totalPreco);
