@@ -60,11 +60,16 @@ function tipoDeDado(queTipo) {
 // utilize essa funçao para mostrar no console o seu nome completo
 // quando o evento 'scroll' ocorrer.
 
-addEventListener('scroll', function() {
-  console.info('Davi Nascimento')
+addEventListener('click', function() {
+  console.info('Davi Nascimento') //conta ao clickar  na pagina e mostra o nome
 })
 
+
+
 // Corrija o erro abaixo:
+
+// para corrigir
+/*
 function precisoVisitar(paisesVisitados) {
   var totalPaises = 193
   return `Ainda faltam ${totalPaises - paisesVisitados} paises para visitar.`
@@ -72,3 +77,21 @@ function precisoVisitar(paisesVisitados) {
 function jaVisitei(paisesVisitados) {
   return `Já visitei ${paisesVisitados} do total de ${totalPaises} paises`
 }
+
+precisoVisitar(20)
+jaVisitei(20)
+*/
+
+// corrigido(era só pegar a variavel e colocar fora do escopo da função ,
+// para chamala depois.(usada como variavel global.))
+var totalPaises = 193
+
+function precisoVisitar(paisesVisitados) {
+  return `Ainda faltam ${totalPaises - paisesVisitados} paises para visitar.`
+}
+function jaVisitei(paisesVisitados) {
+  return `Já visitei ${paisesVisitados} do total de ${totalPaises} paises`
+}
+
+precisoVisitar(20)
+jaVisitei(20)
