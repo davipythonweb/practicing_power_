@@ -51,10 +51,14 @@ var retangulo = {
   perimetro(base, altura) {
     return 2 * base + 2 * altura
   },
+  diagonal(base , altura) {
+    return 2 ** base + 2 ** altura
+  },
 }
 
 retangulo.area()
 retangulo.perimetro()
+retangulo.diagonal()
 
 
 
