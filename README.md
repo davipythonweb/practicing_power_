@@ -21,6 +21,10 @@
 `nvm alias default lts/hydrogen`
 `nvm install lts/hydrogen`
 
+<!-- ultilizando .env => para variaveis de ambiente -->
+
+<!-- instalar o pg -->
+`npm install pg@8.11.3`
 
 <!-- usando DOCKER-COMPOSE -->
 `criar o arquivo compose.yaml`
