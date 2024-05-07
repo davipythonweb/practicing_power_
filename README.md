@@ -10,6 +10,15 @@
 - instalar pacote como dependencia como de desenvolvimento
 `npm install --save-dev jest@29.6.2`
 
+- primeiros passos(de baixo para cima)
+`npm install react-dom@18.2.0`
+`npm install react@18.2.0`
+`npm install next@13.1.6`
+`npm init`
+`nvm install`
+`nvm alias default lts/hydrogen`
+`nvm install lts/hydrogen`
+
 - para rodar testes
 `npm run test`
 `npm test`
