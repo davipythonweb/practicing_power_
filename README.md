@@ -16,6 +16,13 @@
 <!-- script para testes automaticos -->
 `npm run test:watch`
 
+<!-- TDD => Test Driven Development => 
+      DESENVOLVIMENTO ORIENTADO A TESTES -->
+
+<!-- Primeiro se faz o test, depois programa
+    o codigo que vai ser a entrada para o test  -->
+
+
 - studying a little
   _pluguins_
 - Prettier
