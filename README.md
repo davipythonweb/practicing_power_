@@ -10,6 +10,12 @@
 - instalar pacote como dependencia como de desenvolvimento
 `npm install --save-dev jest@29.6.2`
 
+- para rodar testes
+`npm run test`
+`npm test`
+<!-- script para testes automaticos -->
+`npm run test:watch`
+
 - studying a little
   _pluguins_
 - Prettier
@@ -30,6 +36,7 @@
 - empurar as modificações para o github(upload) => git push
 - forçar o envio das modificações, pos o git commit --amend => git push --force
 - puxar as informaçoes do github(download) => git pull
+
 * OBS: os commits são IMUTÁVEIS.
 A branch  main, local/main eh a linha do tempo principal.
 A banch origin/main eh a branch  de origem que esta no github, aponta o repositorio de origem na linha do tempo main.

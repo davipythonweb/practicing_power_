@@ -2,7 +2,8 @@
   "scripts": {
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "jest": "^29.6.2",
