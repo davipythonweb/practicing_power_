@@ -7,11 +7,15 @@
 - conferir a pagina de status do server
 `https://status.render.com/`
 
+- instalar pacote como dependencia como de desenvolvimento
+`npm install --save-dev jest@29.6.2`
+
 - studying a little
   _pluguins_
 - Prettier
 - EditorConfig
 - Live Server
+- jest
 
 - ler arquivos com prettier => npm run lint:check
 - escrever nos arquivos com prettier => npm run lint:fix
