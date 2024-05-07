@@ -8,6 +8,7 @@
 - conferir a pagina de status do server
 `https://status.render.com/`
 
+
 - instalar pacote como dependencia como de desenvolvimento
 `npm install --save-dev jest@29.6.2`
 
@@ -19,6 +20,44 @@
 `nvm install`
 `nvm alias default lts/hydrogen`
 `nvm install lts/hydrogen`
+
+
+<!-- usando DOCKER-COMPOSE -->
+`criar o arquivo compose.yaml`
+<!-- criar a variavel de ambiente password -->
+`environment:POSTGRES_PASSWORD:(a sua senha)`
+<!-- criar e rodar o container e imagem -->
+`docker compose up`
+<!-- porta e server do container  do docker postgres  ipv4 => 0.0.0.0 port => 5432 -->
+<!-- listar processos -->
+`docker ps`
+<!-- forçar listar todos os processos -->
+`docker ps --all`
+`docker -a`
+<!-- ver os logs do docker -->
+`docker logs (nome do container)`
+<!-- subindo o container em modo desanexado do terminal(rosa o service em background) -->
+`docker compose up --detach`
+`docker compose up -d`
+<!-- subindo o container e forçar uma recriação -->
+`docker compose up -d --force-recreate`
+<!-- destruir o container -->
+`docker compose down`
+<!-- criar o container a partir do arquivo yaml detro de uma pasta -->
+`docker compose --file infra/compose.yaml up`
+`docker compose -f infra/compose.yaml up`
+
+
+<!-- instalar o postgres-client -->
+`sudo apt update`
+`sudo apt install postgresql-client`
+
+<!-- comandos postgres -->
+`psql --host=localhost --username=postgres --port=5432`
+<!-- sair do terminal editor do postgres -->
+`\q`
+
+
 
 - para rodar testes
 `npm run test`
