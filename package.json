@@ -5,7 +5,10 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "start": "node server.js",
-    "dev": "next dev"
+    "dev": "npm run services:up && next dev",
+    "services:up": "docker compose -f infra/compose.yaml up -d",
+    "services:stop": "docker compose -f infra/compose.yaml stop",
+    "services:down": "docker compose -f infra/compose.yaml down"
   },
   "devDependencies": {
     "jest": "^29.6.2",
