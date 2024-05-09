@@ -34,3 +34,20 @@ areaQuadrado.toString()
 //}"
 
 areaQuadrado.length  // 1
+
+// ---------------------------------------------------------
+// ELEMENTOS DO DOM
+
+/* <a class="btn"></a> */
+var btn = document.querySelector('.btn')
+
+btn.classList.add('azul') // adiciona a classe azul
+btn.innerText // 'Clique'
+btn.addEventListener('Click', function() {
+  console.info('Clicou')
+})
+
+// Praticamente todos os efeitos
+// com o JS são feitos utilizando
+// propriedades e metodos de 
+// objetos DOM.
