@@ -96,7 +96,9 @@
 - empurar as modificações para o github(upload) => git push
 - forçar o envio das modificações, pos o git commit --amend => git push --force
 - puxar as informaçoes do github(download) => git pull
-- modificar um arquivo no git => git mv (arquivo) (novoarquivo) 
+- modificar um arquivo no git => git mv +(arquivo) + (novoarquivo)
+
+- resumindo o comando git add -A e commit -m =>git commit -am ''
 
 * OBS: os commits são IMUTÁVEIS.
 A branch  main, local/main eh a linha do tempo principal.
