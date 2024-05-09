@@ -1,0 +1,8 @@
+// usar um caminho raiz para as importaçoes.
+
+{
+    "compilerOptions": {
+        "baseUrl": "."
+    }
+}
+
