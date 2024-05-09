@@ -51,3 +51,39 @@ btn.addEventListener('Click', function() {
 // com o JS são feitos utilizando
 // propriedades e metodos de 
 // objetos DOM.
+
+// ----------------------------------------------
+// OBJETOS
+// REVOLUCIONARAM A
+// PROGRAMAÇÂO
+// Web API's métodos e propriedades que permitem a
+// interaçao JavaScript e Browser.
+// -----------------------------------------------
+
+
+
+
+
+
+// EXERCICIOS
+
+// nomeie 3 propriedades ou metodos de strings
+var nome = 'Andre'
+// nome.fixed
+// nome.length
+// nome.slice
+
+// nomeie 5 propriedades ou metodos de elementos DOM
+var btn = document.querySelector('.btn')
+// addEventListener
+// appendChild
+// id
+// innerHTML
+// outerHTML
+
+
+// busque na web um objeto (metodo) capaz de interagir com
+// o clipboard
+// OBS:clipboard eh a parte do seu computador
+// que lida com CTRL + C.
+// 'https://www.treinaweb.com.br/blog/clipboard-js-copiar-e-colar-com-javascript'
