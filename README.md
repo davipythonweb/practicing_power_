@@ -2,12 +2,14 @@
 
 -prettier esta *desabilitado* in Codespaces
 
-<!-- com framework next  e biblioteca react -->
+* com framework next  e biblioteca react
+
 *server no render.com*
 `https://laboratorio-1-6w67.onrender.com/`
 - conferir a pagina de status do server
 `https://status.render.com/`
 
+#### formato de data ISO-8601
 
 - instalar pacote como dependencia como de desenvolvimento
 `npm install --save-dev jest@29.6.2`
