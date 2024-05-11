@@ -77,6 +77,8 @@
 <!-- Primeiro se faz o test, depois programa
     o codigo que vai ser a entrada para o test  -->
 
+- Fazer query sanitization ou limpeza de consulta
+
 
 - studying a little
   _pluguins_
