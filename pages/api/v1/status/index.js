@@ -15,9 +15,10 @@ async function status(request, response) {
    databaseMaxConnectionsResult.rows[0].max_connections
 
    const databaseOpenedConnectionsResult =  await database.query(
-    "SELECT * FROM pg_stat_activity WHERE datname = 'local_db';"
+    "SELECT count(*)::int FROM pg_stat_activity WHERE datname = 'local_db';"
     );
-   const databaseOpenedConnectionsValue = databaseOpenedConnectionsResult.rows.length
+   const databaseOpenedConnectionsValue = 
+    databaseOpenedConnectionsResult.rows[0].count
   
   response.status(200).json({
     updated_at: updatedAt,
