@@ -103,6 +103,7 @@
 - modificar um arquivo no git => git mv +(arquivo) + (novoarquivo)
 
 - resumindo o comando git add -A e commit -m =>git commit -am ''
+- para restaurar todos os arquivosdo repository => git restore .
 
 * OBS: os commits são IMUTÁVEIS.
 A branch  main, local/main eh a linha do tempo principal.
