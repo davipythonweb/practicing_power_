@@ -91,7 +91,7 @@ for(var fruta = 0; fruta < frutas.length; fruta++) {
   }
 }
 // coloque a ultima fruta do array acima em
-// uma variavel sem remover o mesmo array.
+// uma variavel sem removela do mesmo array.
 
 var separar = '_-----------------' 
 console.info(separar)
