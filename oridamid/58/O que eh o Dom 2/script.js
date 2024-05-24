@@ -17,6 +17,28 @@ titulo.offsetHeight // retorna a altura do elemento
 
 const h1Selecionado = document.querySelector('h1')
 
-h1Selecionado.addEventListener('click', function() {
+function callbackh1() {
   console.info('Clicou em', h1Selecionado.innerText)
-})
+}
+
+h1Selecionado.addEventListener('click',callbackh1) // adicionando evento de click + uma funcao callback
+
+
+// EXERCICIO
+
+// Retorne a url da pagina atual utilizando o objeto window
+const hrefPagina = window.location.href
+console.log(hrefPagina)
+
+
+// Selecione o primeiro elemento da pagina que:
+// póssuia a classe ativo
+const elementoAtivo = document.querySelector('.ativo')
+
+// retorne a linguagem do navegador
+const linguagem = window.navigator.language
+console.log(` linguagem do navegador: ${linguagem}`)
+
+// retorne a largua da janela
+const windowWidth = window.innerWidth
+console.info(`largura da pagina : ${windowWidth}`)
