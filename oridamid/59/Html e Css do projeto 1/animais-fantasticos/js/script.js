@@ -28,7 +28,7 @@ const ul = document.getElementsByTagName('ul')
 
 
 // retorna o primeiro elemento
-console.info(gridSection[0])
+// console.info(gridSection[0])
 
 
 
@@ -63,7 +63,7 @@ const titulos = document.querySelectorAll('.titulo')
 const fotosAnimais = document.querySelectorAll('.animais-lista ')
 
 // Retorna o segundo elemento
-console.log(gridSection2[1])
+// console.log(gridSection2[1])
 
 
 // OBS: Diferente do getElementByClassName, 
@@ -73,7 +73,7 @@ console.log(gridSection2[1])
 
 // HTMLCollection vs NodeList
 
-// OBS: A diferença esta no smetodos e propiedades
+// OBS: A diferença esta nos metodos e propiedades
 // de ambas.Alem disso a NodeList retornada com
 // querySelectorAll eh estatica.
 
@@ -82,6 +82,64 @@ const gridSectionHTML = document.getElementsByClassName('grid-section')
 const gridSectionNode = document.querySelectorAll('.grid-section')
 
 titulo.classList.add('grid-section')
+// primeiroUl.classList.add('grid-section') adiciona uma classe na ul
 
-console.info(gridSectionHTML) // 4 itens
-console.info(gridSectionNode) // 3 itens
+// 4 itens, nao funciona o forEach()
+// console.info(gridSectionHTML) 
+
+// 3 itens, funciona o forEach()
+// console.info(gridSectionNode) 
+
+
+
+
+// Array-Like
+
+// OBS: HTMLCollection e NodeList são array-like, parecem uma array
+// mas não são. O método de Array forEach() por exemplo,
+// existe apenas em NodeList.
+
+const gridSection3 = document.querySelectorAll('.grid-section')
+
+gridSection3.forEach(function(gridItem, index, array) {
+  gridItem.classList.add('azul')
+  // console.info(index) // index do item no array
+  // console.info(array) // o array completo
+})
+
+// tranformando array-like em um array
+const arrayGrid = Array.from(gridSectionHTML) // agora funciona o forEach()
+
+
+
+
+
+// EERCICIOS
+// retorne no console todas as imagens do site
+const imagensAll = document.querySelectorAll('img')
+
+// retorne no console apenas as imagens que começarem com a palavra imagem
+const imagenImag = document.querySelectorAll('img[src^="images/imagem"]')
+// console.log(imagenImag)
+
+// selecione todos os links internos (onde o href começa com #)
+const linksAll = document.querySelectorAll('[href^="#"]')
+
+// selecione o primeiro h2 dentro de .animais-descricao
+const h2Animais = document.querySelector('.animais-descricao h2')
+
+// selecione o ultimo p do site
+
+// pegando todos os paragrafos
+const ultimoParagrafo = document.querySelectorAll('p')
+
+// pegando somente o ultimo p 
+// console.log(ultimoParagrafo[ultimoParagrafo.length -1])
+
+// outra forma de pegar o ultimo p 
+// console.info(ultimoParagrafo[--ultimoParagrafo.length]) 
+
+
+
+
+
