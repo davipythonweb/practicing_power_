@@ -30,6 +30,9 @@ const ul = document.getElementsByTagName('ul')
 // retorna o primeiro elemento
 console.info(gridSection[0])
 
+
+
+
 // Seletor Geral Unico
 
 // querySelector => retorna o primeiro elemento
@@ -40,6 +43,9 @@ const contato2 = document.querySelector('#contato')
 const ultimoItem = document.querySelector('.animais-lista li:last-child')
 const linkCss = document.querySelector('[href^="https://"]')
 const primeiroUl = document.querySelector('ul')
+
+const linkInterno = document.querySelector('[href^="#"]') // pegando o primeiro link interno
+
 
 // Busca dentro do Ul apenas
 const navItem = primeiroUl.querySelector('li')
