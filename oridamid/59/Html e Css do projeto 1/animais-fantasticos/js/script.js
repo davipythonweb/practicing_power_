@@ -143,3 +143,113 @@ const ultimoParagrafo = document.querySelectorAll('p')
 
 
 
+// forEach
+// OBS: Constantemente vamos selecionar uma lista de itens do DOM.
+// A melhor dorma para interagirmos com os mesmos eh utilizando
+//  o metodo forEach()
+
+const imgs = document.querySelectorAll('img')
+// mostrando todas as imagens com loop forEach
+imgs.forEach(function(item) {
+  
+  // console.info(item)
+})
+
+// Parâmentros do forEach
+// OBS: O primeiro parametro eh o callback, ou seja, a
+// funçao que será ativada a cada item.
+// Esta função pode receber tres parametros: valorAtual, index e array.
+
+
+const imgs2 = document.querySelectorAll('img')
+
+// mostrando todas as imagens com loop forEach
+imgs2.forEach(function(valorAtual,index,array) {
+
+  // o item atual no loop
+  // console.info(valorAtual)
+
+  // o numero do index
+  // console.info(index)
+
+  // o array completo
+  // console.info(array)
+})
+
+
+
+// foreach e Array
+// OBS: forEach eh m metodo de Array, alguns objetos
+// array-like possuem este metodo. Caso não possua, o ideal eh
+// transforma-los em uma array.
+
+// array-like que eh um = HTMLCollection
+const titulos2 = document.getElementsByClassName('titulo')
+// transformando array-like para array
+const titulosArray = Array.from(titulos2)
+
+// loop forEach nos titulos do array
+titulosArray.forEach(function(valorAtual) {
+
+  // console.log(valorAtual)
+})
+
+
+
+
+// Arrow Function
+// OBS: Sintaxe curta em relação a function expression.
+// Basta remover a palavra chave (function) e 
+// adicionar a fat arrow => após os argumentos.
+// EXEMPLO:
+const ul2 = document.querySelectorAll('ul')
+
+// forma encurtada de forEach com Arrow Function 
+ul2.forEach((item) =>{
+
+  // console.log(item)
+})
+
+
+// Argumentos e Parenteses
+const imgs3 = document.querySelectorAll('img')
+
+// argumento unico nao precisa de parenteses
+imgs3.forEach(item => {
+  // console.log(item)
+})
+
+
+// multiplos argumentos precisam de parentes
+imgs3.forEach((item, index) => {
+  // console.log(item, index)
+})
+
+// sem argumentos precisa dos parentes, mesmo vazio
+
+let i = 0
+imgs3.forEach(() => {
+  // console.log(i++)
+})
+
+// qundo só tem uma linha de código, não eh necessario as chaves {}
+let k = 10
+imgs3.forEach((item) => console.log(i++))
+
+
+// OBS: Eh melhor sempre utilizar os parenteses!!!
+
+
+// EXERCICIOS:
+
+// Mostre no console cada paragrafo do site
+const paragrafoAll = document.querySelectorAll('p')
+paragrafoAll.forEach((valorAtual) => {
+  console.info(valorAtual)
+})
+
+// Mostre o texto dos paragrafos no console
+paragrafoAll.forEach((valorAtual) => {
+  console.log(valorAtual.innerText)
+})
+
