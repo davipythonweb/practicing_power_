@@ -233,8 +233,8 @@ imgs3.forEach(() => {
 })
 
 // qundo só tem uma linha de código, não eh necessario as chaves {}
-let k = 10
-imgs3.forEach((item) => console.log(i++))
+// let k = 10
+// imgs3.forEach((item) => console.log(i++))
 
 
 // OBS: Eh melhor sempre utilizar os parenteses!!!
@@ -245,11 +245,73 @@ imgs3.forEach((item) => console.log(i++))
 // Mostre no console cada paragrafo do site
 const paragrafoAll = document.querySelectorAll('p')
 paragrafoAll.forEach((valorAtual) => {
-  console.info(valorAtual)
+  // console.info(valorAtual)
 })
 
 // Mostre o texto dos paragrafos no console
 paragrafoAll.forEach((valorAtual) => {
-  console.log(valorAtual.innerText)
+  // console.log(valorAtual.innerText)
 })
 
+
+
+// Class List
+
+// OBS: retorna uma lista com as classes do elemento. 
+// Permite adicionar, remover e verificar se contém.
+
+const menu = document.querySelector('.menu')
+
+menu.className // string
+menu.classList // lista de classes
+menu.classList.add('ativo')
+menu.classList.add('ativo', 'mobile') // duas classes
+menu.classList.remove('ativo')
+menu.classList.toggle('ativo') // adiciona / remove a classe
+menu.classList.contains('ativo') // retorna um valor booleano true ou false
+menu.classList.replace('ativo', 'inativo') 
+
+
+// Atributes
+// OBS: Retorna uma array-like com os atributos do elemento.
+
+const animais2 = document.querySelector('.animais')
+
+animais2.attributes // todos os atributos
+animais2.attributes[0] // retorna o primeiro atributo
+
+
+
+// getAttribute e setAttribute
+
+// OBS:Métodos que retornamou definem de acordo
+// com o atributo selecionado
+const img = document.querySelector('img')
+
+img.getAttribute('src') // valor do src
+img.setAttribute('alt', 'TextoAlternativo') //muda o alt
+img.hasAttribute('id') // true ou false
+img.removeAttribute('alt') // remove o alt
+
+img.hasAttributes() // true / false se tem algum atributo
+
+// eh muito comu metodos de get e set.
+
+
+// Read Only vs Writable
+
+// obs: Existem propiedades que nao permitem
+// a mudança de seus valores, essas sao considerados Ready Only,
+// ou seja, apenas leitura.
+
+const animais4 = document.querySelector('.animais')
+
+animais4.className
+animais4.className = 'azul' // substitui completamente a string
+animais4.className += 'vermelho' // adiciona vermelho a string
+
+animais4.attributes = 'class="ativo"' // nao funciona, read-only
+
+
+// OBS:Lembre-se que podemos modificar
+// o valor de uma propiedade objeto.propiedade = ''
