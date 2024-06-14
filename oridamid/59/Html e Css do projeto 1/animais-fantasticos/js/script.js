@@ -340,11 +340,76 @@ const imgAlts = document.querySelectorAll('img')
 
 imgAlts.forEach((img) => {
   const possuiAtributo = img.hasAttribute('alt')
-  console.info(img, possuiAtributo)
+  // console.info(img, possuiAtributo)
 })
+
 // modifique o href do link externo no menu
 
 const linkExterno = document.querySelector('a[href^="http"]')
 
 linkExterno.setAttribute('href', 'https://google.com')
-console.info(linkExterno)
+
+// console.info(linkExterno)
+
+
+
+
+
+
+// DIMENÇOES E DISTANCIAS
+
+// Height e Width
+// Estas sao propiedades e metodos dos objetos Element
+// e HTMLElement, a maioria delas sao Read Only
+
+const section2 = document.querySelector('.animais-lista')
+
+section2.clientHeight // height + padding
+section2.offsetHeight // height + padding + border
+section2.scrollHeight // height total, mesmo dentro de scrol
+
+// mesma coisa para o Width,
+// clientWidth
+
+
+
+// offsetTop e offsetLeft
+const section3 = document.querySelector('.copy')
+
+// Distancia entre o topo do elemento e o topo da página
+section3.offsetTop
+
+// Distancia entre o canto esquerdo do elemento
+//  e o canto esquerdo da pagina
+section3.offsetLeft
+
+
+// getBoundingClientRect()
+// obs:Metodo que retorna um objeto com valores
+//  de width,height distancias do elemento e mais.
+
+const section4 = document.querySelector('.animais-lista')
+
+// como se fosse as coordenadas de um elemento
+const rect = section4.getBoundingClientRect()
+
+rect.height // height do elemento
+rect.width // width do elemento
+rect.top // distancia entre o topo do elemento e o scroll
+
+
+// Window
+
+window.innerWidth 
+window.outerWidth 
+window.innerHeight 
+window.outerWidth
+
+window.pageYOffset 
+window.pageXOffset
+
+if(window.innerWidth < 600) {
+  console.log('Tela menor que 600px')
+} else {
+  console.info('Tela maior que 600px')
+}
