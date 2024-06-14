@@ -262,14 +262,14 @@ paragrafoAll.forEach((valorAtual) => {
 
 const menu = document.querySelector('.menu')
 
-menu.className // string
-menu.classList // lista de classes
-menu.classList.add('ativo')
-menu.classList.add('ativo', 'mobile') // duas classes
-menu.classList.remove('ativo')
-menu.classList.toggle('ativo') // adiciona / remove a classe
-menu.classList.contains('ativo') // retorna um valor booleano true ou false
-menu.classList.replace('ativo', 'inativo') 
+// menu.className // string
+// menu.classList // lista de classes
+// menu.classList.add('ativo')
+// menu.classList.add('ativo', 'mobile') // duas classes
+// menu.classList.remove('ativo')
+// menu.classList.toggle('ativo') // adiciona / remove a classe
+// menu.classList.contains('ativo') // retorna um valor booleano true ou false
+// menu.classList.replace('ativo', 'inativo') 
 
 
 // Atributes
@@ -277,8 +277,8 @@ menu.classList.replace('ativo', 'inativo')
 
 const animais2 = document.querySelector('.animais')
 
-animais2.attributes // todos os atributos
-animais2.attributes[0] // retorna o primeiro atributo
+// animais2.attributes // todos os atributos
+// animais2.attributes[0] // retorna o primeiro atributo
 
 
 
@@ -288,12 +288,12 @@ animais2.attributes[0] // retorna o primeiro atributo
 // com o atributo selecionado
 const img = document.querySelector('img')
 
-img.getAttribute('src') // valor do src
-img.setAttribute('alt', 'TextoAlternativo') //muda o alt
-img.hasAttribute('id') // true ou false
-img.removeAttribute('alt') // remove o alt
+// img.getAttribute('src') // valor do src
+// img.setAttribute('alt', 'TextoAlternativo') //muda o alt
+// img.hasAttribute('id') // true ou false
+// img.removeAttribute('alt') // remove o alt
 
-img.hasAttributes() // true / false se tem algum atributo
+// img.hasAttributes() // true / false se tem algum atributo
 
 // eh muito comu metodos de get e set.
 
@@ -306,12 +306,45 @@ img.hasAttributes() // true / false se tem algum atributo
 
 const animais4 = document.querySelector('.animais')
 
-animais4.className
-animais4.className = 'azul' // substitui completamente a string
-animais4.className += 'vermelho' // adiciona vermelho a string
+// animais4.className // string com nome das classes
+// animais4.className = 'azul' // substitui completamente a string
+// animais4.className += 'vermelho' // adiciona vermelho a string
 
-animais4.attributes = 'class="ativo"' // nao funciona, read-only
+// animais4.attributes = 'class="ativo"' // nao funciona, read-only
 
 
 // OBS:Lembre-se que podemos modificar
 // o valor de uma propiedade objeto.propiedade = ''
+
+
+
+
+// EXERCICIO
+
+// Adicione a classe ativo a todos os itens do menu
+const itensMenu = document.querySelectorAll('.menu a')
+
+itensMenu.forEach((item) => {
+  item.classList.add('ativo')
+})
+// Remova a classe ativo de todos os itens do menu e mantenha apenas no primeiro
+itensMenu.forEach((item) => {
+  item.classList.remove('ativo')
+})
+
+// adicionou só no primeiro
+itensMenu[0].classList.add('ativo')
+
+// verifique se as imagens possuem o atributo alt
+const imgAlts = document.querySelectorAll('img')
+
+imgAlts.forEach((img) => {
+  const possuiAtributo = img.hasAttribute('alt')
+  console.info(img, possuiAtributo)
+})
+// modifique o href do link externo no menu
+
+const linkExterno = document.querySelector('a[href^="http"]')
+
+linkExterno.setAttribute('href', 'https://google.com')
+console.info(linkExterno)
