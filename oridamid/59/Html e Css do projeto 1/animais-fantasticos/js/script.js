@@ -400,16 +400,68 @@ rect.top // distancia entre o topo do elemento e o scroll
 
 // Window
 
-window.innerWidth 
-window.outerWidth 
-window.innerHeight 
-window.outerWidth
+window.innerWidth // largura da janela
+window.outerWidth  //largura da janela , soma o dev tools tambem
+window.innerHeight // altura da janela
+window.outerWidth // altura da janela + soma a barra de endereço
 
-window.pageYOffset 
-window.pageXOffset
+window.pageYOffset // distancia total do scroll horizontal
+window.pageXOffset // distancia total do scroll vertical
 
 if(window.innerWidth < 600) {
-  console.log('Tela menor que 600px')
+  // console.log('Tela menor que 600px')
 } else {
-  console.info('Tela maior que 600px')
+  // console.info('Tela maior que 600px')
 }
+
+
+
+// matchMedia()
+// obs: Utilize um media-queri como no CSS
+// para verificar a largura do bowser.
+
+const small = window.matchMedia('(max-width: 600px')
+
+if(small.matches) {
+  // console.log('Tela menor que 600px')
+} else {
+  // console.log('Tela maior que 600px')
+}
+
+
+
+// EXERCICIO:
+
+
+// Verifique a distancia da primeira imagem
+// em relação ao topo da pagina
+const imgDistancia = document.querySelector('img')
+console.info(` distancia da imagem até o topo: ${imgDistancia.offsetTop}`)
+
+
+// Retorne a soma da largura de todas as imagens
+function somaImagens(){
+
+  const imgAll = document.querySelectorAll('img')
+  let soma = 0
+
+  imgAll.forEach((image) => {
+    soma += image.offsetWidth
+  })
+
+  console.log(` soma de todas as images ${soma}`)
+}
+
+window.onload = function() {
+  somaImagens()
+}
+
+
+
+// verifique se os links da pagina 
+// possuem o minimo recomendado para todos
+
+// utilizados com o dedo. (48px/48px de acordo com o google)
+
+// se o browser for menor que 720px,
+// adicione a classe menu-mobile ao menu.
