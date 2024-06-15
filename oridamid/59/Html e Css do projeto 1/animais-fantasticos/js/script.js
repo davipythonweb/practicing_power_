@@ -2,6 +2,7 @@
 // getElementById ->seleciona e retorna elementos do DOM
 // OBS:javascript eh caseSensitive
 
+// CONTEUDO DA AULA 59 ATE 67
 
 // seleciona ID
 const animamaisSection = document.getElementById('animais')
@@ -483,3 +484,4 @@ if(browserSmall) {
   const menuMobile = document.querySelector('.menu')
   menu.classList.add('menu-mobile')
 }
+
